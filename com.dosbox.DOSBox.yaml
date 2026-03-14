@@ -1,0 +1,49 @@
+id: com.dosbox.DOSBox
+runtime: org.freedesktop.Platform
+runtime-version: '25.08'
+sdk: org.freedesktop.Sdk
+command: dosbox
+finish-args:
+  - --device=all
+  - --socket=pulseaudio
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --share=ipc
+  - --share=network
+  - --persist=.dosbox
+  - --filesystem=xdg-documents
+cleanup:
+  - /include
+  - /lib/pkgconfig
+  - '*.la'
+  - '*.a'
+modules:
+  - shared-modules/SDL/sdl12-compat.json
+
+  - name: sdl_net
+    sources:
+      - type: git
+        url: https://github.com/libsdl-org/SDL_net.git
+        commit: e2e041b81747bc01b2c5fb3757a082e525e5d25b
+
+  - name: sdl_sound
+    sources:
+      - type: git
+        url: https://github.com/icculus/SDL_sound.git
+        commit: 3c1cc931b2ea598c553a0b92cda315d191194b5a
+
+  - name: dosbox
+    sources:
+      - type: archive
+        url: https://sourceforge.net/projects/dosbox/files/dosbox/0.74-3/dosbox-0.74-3.tar.gz
+        sha256: c0d13dd7ed2ed363b68de615475781e891cd582e8162b5c3669137502222260a
+      - type: file
+        path: com.dosbox.DOSBox.png
+      - type: file
+        path: com.dosbox.DOSBox.desktop
+      - type: file
+        path: com.dosbox.DOSBox.metainfo.xml
+    post-install:
+      - install -Dm644 com.dosbox.DOSBox.png -t /app/share/icons/hicolor/256x256/apps
+      - install -Dm644 com.dosbox.DOSBox.desktop -t /app/share/applications
+      - install -Dm644 com.dosbox.DOSBox.metainfo.xml -t /app/share/metainfo
