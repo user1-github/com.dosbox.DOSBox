@@ -10,13 +10,7 @@ finish-args:
   - --socket=fallback-x11
   - --share=ipc
   - --share=network
-  - --persist=.dosbox
-  - --filesystem=xdg-desktop
-  - --filesystem=xdg-documents
-  - --filesystem=xdg-download
-  - --filesystem=xdg-music
-  - --filesystem=xdg-pictures
-  - --filesystem=xdg-videos
+  - --filesystem=home
 cleanup:
   - /include
   - /lib/pkgconfig
