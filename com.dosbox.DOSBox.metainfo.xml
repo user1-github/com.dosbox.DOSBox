@@ -13,6 +13,14 @@
     <color type="primary" scheme_preference="dark">#b39627</color>
   </branding>
   <summary>Run old DOS applications</summary>
+  <summary xml:lang="ca">Executeu antigues aplicacions DOS</summary>
+  <summary xml:lang="cs">Spouštění starých DOSových aplikací</summary>
+  <summary xml:lang="de">Ein Emulator für alte DOS Programme</summary>
+  <summary xml:lang="es">Un emulador para ejecutar antiguas aplicaciones DOS</summary>
+  <summary xml:lang="nl">Een simulator om oude DOS-spellen te spelen</summary>
+  <summary xml:lang="ru">Запуск старых DOS-приложений</summary>
+  <summary xml:lang="it">Un emulatore per far girare vecchi giochi DOS</summary>
+  <summary xml:lang="ua">Запуск старих DOS-застосувань</summary>
   <description>
     <p>
       DOSBox is a DOS-emulator using SDL for easy portability to different platforms.
