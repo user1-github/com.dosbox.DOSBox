@@ -1,14 +1,6 @@
 [Desktop Entry]
 Type=Application
-Name=DOSBox Emulator
-Name[ca]=Emulador DOSBox
-Name[cs]=Emulátor DOSBox
-Name[de]=DOSBox Emulator
-Name[es]=Emulador DOSBox
-Name[nl]=DOSBox Simulator
-Name[ru]=Эмулятор DOSBox
-Name[it]=DOSBox emulatore
-Name[ua]=Емулятор DOSBox
+Name=DOSBox
 Comment=Run old DOS applications
 Comment[ca]=Executeu antigues aplicacions DOS
 Comment[cs]=Spouštění starých DOSových aplikací
