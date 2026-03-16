@@ -1,10 +1,5 @@
 #!/bin/sh
 
-CONF_PATH="$XDG_CONFIG_HOME/dosbox.conf"
-
-if [ ! -f "$CONF_PATH" ]; then
-    echo "Config not found. Generating default at $CONF_PATH..."
-    dosbox -c "CONFIG -writeconf $CONF_PATH" -exit
-fi
+CONF_PATH="${HOST_XDG_CONFIG_HOME:-${XDG_CONFIG_HOME:-$HOME/.config}}/dosbox/dosbox.conf"
 
 exec dosbox -conf "$CONF_PATH" "$@"
