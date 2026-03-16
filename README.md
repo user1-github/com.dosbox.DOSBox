@@ -6,5 +6,4 @@
 - By default, DOSBox Flatpak creates its config file under `/.var/app/com.dosbox.DOSBox/.dosbox`.
   However, if you have an existing DOSBox 0.74 config file named `dosbox.conf` under `/.config/dosbox` directory and you grant the Flatpak filesystem access to it,
   DOSBox will first try to load that config file.
-  The filesystem access can be granted using the following command:
-  `flatpak override --user --filesystem=xdg-config/dosbox com.dosbox.DOSBox`
+  The filesystem access can be granted using the following command: `flatpak override --user --filesystem=xdg-config/dosbox com.dosbox.DOSBox`
