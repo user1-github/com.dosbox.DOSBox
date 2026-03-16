@@ -1,8 +1,9 @@
 [Desktop Entry]
-Name=DOSBox
-Comment=An x86/DOS emulator with sound/graphics
-Exec=dosbox
-Icon=com.dosbox.DOSBox
-Terminal=false
 Type=Application
-Categories=System;Emulator;
+Name=DOSBox
+Comment=Run old DOS applications
+Icon=com.dosbox.DOSBox
+Exec=run-dosbox
+Terminal=false
+Categories=Game;Emulator;
+Keywords=DOS;Emulator;
